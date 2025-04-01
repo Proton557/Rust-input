@@ -32,4 +32,49 @@ fn main() {
       else {
         println!("You lose!") 
       }  
+    fn main(){
+   let num:[i32;9] = [1,2,3,4,5,6,7,8,9];
+   for x in 0..9
+   { 
+      //println!("in position {} there is: {}",x,num[x]);
+   }
+   //println!("array size is :{}",num.len());
+   
+   let mut states = [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu and Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttarakhand",
+    "Uttar Pradesh",
+    "West Bengal",];
+   
+   states.sort_by(|a, b| a.to_lowercase().cmp(&b.to_lowercase()));
+   
+   for i in 0..28
+   { 
+      println!("state {} there is: {}",i+1,states[i]);
+   }
+   
 }
